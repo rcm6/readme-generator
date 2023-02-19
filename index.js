@@ -33,7 +33,40 @@ const questions = () =>
       type: 'rawlist',
       name: 'license',
       message: 'Please enter license type',
-      choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD-2-Clause License', 'BSD-3-Clause License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal']
+      choices: [
+        {
+          name:'None',
+          value: 0,
+        },
+        {
+          name:'Apache License 2.0',
+          value: 1,
+        },
+        {
+          name:'GNU General Public License v3.0',
+          value: 2,
+        },
+        {
+          name:'MIT License',
+          value: 3,
+        },
+        {
+          name:'BSD-2-Clause License',
+          value: 4,
+        },
+        {
+          name:'BSD-3-Clause License',
+          value: 5,
+        },
+        {
+          name:'Boost Software License 1.0',
+          value: 6,
+        },
+        {
+          name:'Creative Commons Zero v1.0 Universal',
+          value: 7,
+        },
+        ]
     },
     {
       type: 'input',
