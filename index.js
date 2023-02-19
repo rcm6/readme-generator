@@ -99,7 +99,7 @@ const questions = () =>
 // function to initialize program
 function init() {
 questions()
-  .then((answers) => writeFileAsync('readme.md', generateMarkdown(answers)))
+  .then((answers) => writeFileAsync('output/README.md', generateMarkdown(answers)))
   .then(() => console.log('Successfully wrote to readme.md'))
   .catch((err) => console.error(err));
 }
